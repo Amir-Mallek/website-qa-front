@@ -1,0 +1,53 @@
+.tag {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  padding: 3px 8px;
+  border-radius: 15px;
+  display: inline-block;
+  color: #6c757d;
+  background-color: #d6d8db;
+}
+
+.impact-minor {
+  color: #007bff;
+}
+.impact-moderate {
+  color: #ffc107;
+}
+.impact-serious {
+  color: #dc3545;
+}
+.impact-critical {
+  color: black;
+}
+
+.tag.impact-minor {
+  background-color: #cce5ff;
+}
+
+.tag.impact-moderate {
+  background-color: #fff3cd;
+}
+.tag.impact-serious {
+  background-color: #f8d7da;
+}
+.tag.impact-critical {
+  background-color: #777474;
+}
+.fat-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 0;
+}
+.fat-row .info {
+  flex-grow: 1;
+}
+.fat-row .action {
+  margin-left: auto;
+}
+.description {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
