@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { Metric } from '../models/Metric';
 
@@ -10,7 +10,7 @@ import { Metric } from '../models/Metric';
   styleUrl: './performance.component.css',
 })
 export class PerformanceComponent {
-  url: string = 'insat.rnu.tn';
+  @Input() url: string = '';
   isLoading = true;
   metrics: Metric[] = [];
   metricColors = ['green', 'orange', 'red'];

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import axe from 'axe-core';
 import { ApiService } from '../services/api.service';
 
@@ -10,7 +10,7 @@ import { ApiService } from '../services/api.service';
   styleUrl: './html-validation.component.css',
 })
 export class HtmlValidationComponent {
-  url: string = 'insat.rnu.tn';
+  @Input() url: string = '';
   isLoading = true;
   violations: any[] = [];
 

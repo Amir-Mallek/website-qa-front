@@ -12,6 +12,12 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
+  validateUrl(url: string): Observable<{ valid: boolean }> {
+    return this.http.get<{ valid: boolean }>(`${this.API_URL}/validate`, {
+      params: { url: url },
+    });
+  }
+
   getAccessibilityReport(url: string): Observable<axe.Result[]> {
     return this.http.get<axe.Result[]>(`${this.API_URL}/accessibility`, {
       params: { url: url },
@@ -26,6 +32,12 @@ export class ApiService {
 
   getPerformanceReport(url: string): Observable<Metric[]> {
     return this.http.get<Metric[]>(`${this.API_URL}/performance`, {
+      params: { url: url },
+    });
+  }
+
+  getSeoReport(url: string): Observable<{ content: string }> {
+    return this.http.get<{ content: string }>(`${this.API_URL}/seo`, {
       params: { url: url },
     });
   }

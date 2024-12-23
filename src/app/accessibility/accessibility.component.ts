@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import axe from 'axe-core';
 import { ApiService } from '../services/api.service';
 import { of } from 'rxjs';
@@ -11,7 +11,7 @@ import { of } from 'rxjs';
   styleUrl: './accessibility.component.css',
 })
 export class AccessibilityComponent {
-  url: string = 'insat.rnu.tn';
+  @Input() url: string = '';
   isLoading = true;
   violations: axe.Result[] = [];
 

@@ -1,0 +1,13 @@
+.input-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.components > * {
+  margin-bottom: 20px;
+}

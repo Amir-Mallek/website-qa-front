@@ -1,0 +1,10 @@
+markdown {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+markdown h1, markdown h2 {
+  color: #333;
+}
